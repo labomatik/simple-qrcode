@@ -302,7 +302,7 @@ class Calendar implements DataTypeInterface
             throw new InvalidArgumentException('Invalid date provided');
         }
 
-        return $date->format('yymd\THms');
+         return $date->format('Ymd\THis');
     }
 
     /**

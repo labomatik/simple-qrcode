@@ -297,7 +297,10 @@ class Calendar implements DataTypeInterface
     protected function convertEventDateTimeToString($dateTime)
     {
         try {
-            $date = new DateTime($dateTime);
+            $date = DateTime::createFromFormat($this->dateTimeFormat, $dateTime);
+            if (!$date) {
+                throw new InvalidArgumentException('Invalid date provided');
+            }
         } catch (Exception $e) {
             throw new InvalidArgumentException('Invalid date provided');
         }

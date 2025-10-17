@@ -66,7 +66,7 @@ class CalendarTest extends TestCase
 
         $properFormat = 'BEGIN:VEVENT'.$this->separator.
                         'SUMMARY:My FooBar Event'.$this->separator.
-                        'DTSTART:20201008T161000'.$this->separator.
+                        'DTSTART:20201008T160000'.$this->separator.
                         'END:VEVENT';
 
         $this->assertEquals($properFormat, strval($this->calendar));
@@ -84,8 +84,8 @@ class CalendarTest extends TestCase
 
         $properFormat = 'BEGIN:VEVENT'.$this->separator.
             'SUMMARY:My FooBar Event'.$this->separator.
-            'DTSTART:20201008T161000'.$this->separator.
-            'DTEND:20201008T181000'.$this->separator.
+            'DTSTART:20201008T160000'.$this->separator.
+            'DTEND:20201008T180000'.$this->separator.
             'END:VEVENT';
 
         $this->assertEquals($properFormat, strval($this->calendar));
@@ -104,8 +104,8 @@ class CalendarTest extends TestCase
 
         $properFormat = 'BEGIN:VEVENT'.$this->separator.
             'SUMMARY:My FooBar Event'.$this->separator.
-            'DTSTART:20201008T161000'.$this->separator.
-            'DTEND:20201008T181000'.$this->separator.
+            'DTSTART:20201008T160000'.$this->separator.
+            'DTEND:20201008T180000'.$this->separator.
             'END:VEVENT';
 
         $this->assertEquals($properFormat, strval($this->calendar));
@@ -136,7 +136,7 @@ class CalendarTest extends TestCase
 
         $properFormat = 'BEGIN:VEVENT'.$this->separator.
             'SUMMARY:My FooBar Event'.$this->separator.
-            'DTSTART:20201008T161000'.$this->separator.
+            'DTSTART:20201008T160000'.$this->separator.
             'LOCATION:Fooon'.$this->separator.
             'END:VEVENT';
 
@@ -155,7 +155,7 @@ class CalendarTest extends TestCase
 
         $properFormat = 'BEGIN:VEVENT'.$this->separator.
             'SUMMARY:My FooBar Event'.$this->separator.
-            'DTSTART:20201008T161000'.$this->separator.
+            'DTSTART:20201008T160000'.$this->separator.
             'URL:https://www.google.com'.$this->separator.
             'END:VEVENT';
 
@@ -193,8 +193,8 @@ class CalendarTest extends TestCase
 
         $properFormat = 'BEGIN:VEVENT'.$this->separator.
             'SUMMARY:My FooBar Event'.$this->separator.
-            'DTSTART;TZID=Africa/Douala:20201008T161000'.$this->separator.
-            'DTEND;TZID=Africa/Douala:20201008T181000'.$this->separator.
+            'DTSTART;TZID=Africa/Douala:20201008T160000'.$this->separator.
+            'DTEND;TZID=Africa/Douala:20201008T180000'.$this->separator.
             'LOCATION:Foo Location'.$this->separator.
             'URL:https://www.google.com'.$this->separator.
             'DESCRIPTION:FooBar\'s Event description can be longer than this'.$this->separator.

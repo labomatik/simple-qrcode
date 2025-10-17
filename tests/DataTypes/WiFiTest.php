@@ -5,6 +5,8 @@ use SimpleSoftwareIO\QrCode\DataTypes\WiFi;
 
 class WiFiTest extends TestCase
 {
+    private $wifi;
+
     public function setUp(): void
     {
         $this->wifi = new Wifi();

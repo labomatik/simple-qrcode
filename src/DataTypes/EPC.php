@@ -102,4 +102,54 @@ class EPC implements DataTypeInterface
             $this->text = $arguments['text'];
         }
     }
+
+    /**
+     * Gets the BIC.
+     *
+     * @return string
+     */
+    public function getBic()
+    {
+        return $this->bic;
+    }
+
+    /**
+     * Gets the IBAN.
+     *
+     * @return string
+     */
+    public function getIban()
+    {
+        return $this->iban;
+    }
+
+    /**
+     * Gets the amount.
+     *
+     * @return string
+     */
+    public function getAmount()
+    {
+        return $this->amount;
+    }
+
+    /**
+     * Gets the name.
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * Gets the text.
+     *
+     * @return string
+     */
+    public function getText()
+    {
+        return $this->text;
+    }
 }
